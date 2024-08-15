@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 726px) {
+
+    
+    body {
+        background-color: #F3e5d8;
+        padding: 100px 0px;
+    }
+    
+    .hero {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .hero-contianer {
+        max-width: 650px;
+        background-color: white;
+        padding: 36px 36px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .hero-contianer hr {
+        color: gray;
+    }
+    
+    .hero-contianer img {
+        height: 80%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    .hero-contianer h1 {
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 48px;
+        color: rgb(28, 32, 34);
+    }
+    
+    .hero-contianer p {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(28, 32, 34);
+    }
+    
+    .preparation {
+        background-color: #FFF7FC;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .preparation h3 {
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        color: #733e54;
+    }
+    
+    .preparation li {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #605752;
+        margin: 0px 20px;
+        padding: 5px 20px;
+    }
+    
+    .preparation ul li::marker {
+        color: #733e54;
+    }
+    
+    .ingredients h2{
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 36px;
+        color: #7e442e;
+        padding-bottom: 10px;
+    }
+    
+    .ingredients li {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #605752;
+        margin: 0px 20px;
+        padding: 5px 20px;
+    }
+    
+    .ingredients ul li::marker {
+        color: #7e442e;
+    }
+    
+    .instructions h2 {
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 36px;
+        color: #7e442e; 
+        padding-bottom: 10px;
+    }
+    
+    .instructions li {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #605752;
+        margin: 0px 20px;
+        padding: 5px 20px;
+    }
+    
+    .instructions ol li::marker {
+        color: #7e442e;
+    }
+    
+    .nutrition h2 {
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 36px;
+        color: #7e442e; 
+        padding-bottom: 10px;
+    }
+    
+    .nutrition p {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(28, 32, 34);
+        padding-bottom: 10px;
+    }
+    
+    .nutrition  table {
+        width: 100%;
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #605752;
+    }
+    
+    td {
+        border-bottom: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        gap: 0;
+    }
+    
+    td:nth-child(2) {
+        color: #7e442e;
+        font-weight: bold;
+    }
+    
+    .attribution {
+        padding: 20px;
+    }
+}
+
+
+/* MOBIL MAX-WIDTH: 375PX */
+
+
+@media screen and (max-width: 725px) {
+    body {
+        background-color: #F3e5d8;
+    }
+    
+    .hero {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero-contianer {
+        max-width: 375px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .hero-contianer hr {
+        color: gray;
+    }
+    
+    .hero-contianer img {
+        height: 80%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .hero-contianer h1 {
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 48px;
+        color: rgb(28, 32, 34);
+        padding: 0px 36px;
+    }
+    
+    .hero-contianer p {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(28, 32, 34);
+        padding: 0px 36px;
+    }
+    
+    .preparation {
+        background-color: #FFF7FC;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0px 36px;
+    }
+    
+    .preparation h3 {
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        color: #733e54;
+    }
+    
+    .preparation li {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #605752;
+        margin: 0px 20px;
+        padding: 5px 20px;
+    }
+    
+    .preparation ul li::marker {
+        color: #733e54;
+    }
+    
+    .ingredients {
+        padding: 0px 36px;
+    }
+
+    .ingredients h2{
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 36px;
+        color: #7e442e;
+        padding-bottom: 10px;
+    }
+    
+    .ingredients li {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #605752;
+        margin: 0px 20px;
+        padding: 5px 20px;
+    }
+    
+    .ingredients ul li::marker {
+        color: #7e442e;
+    }
+    
+    .instructions {
+        padding: 0px 36px;
+    }
+
+    .instructions h2 {
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 36px;
+        color: #7e442e; 
+        padding-bottom: 10px;
+    }
+    
+    .instructions li {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #605752;
+        margin: 0px 20px;
+        padding: 5px 20px;
+    }
+    
+    .instructions ol li::marker {
+        color: #7e442e;
+    }
+    
+    .nutrition {
+        
+        margin: 0px 0px 36px 0px;
+    }
+
+    .nutrition h2 {
+        font-family: Young Serif, sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 36px;
+        color: #7e442e; 
+        padding-bottom: 10px;
+        padding: 0px 36px;
+        
+    }
+    
+    .nutrition p {
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(28, 32, 34);
+        padding-bottom: 10px;
+    }
+    
+    .nutrition  table {
+        width: 100%;
+        font-family: Outfit, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #605752;
+        padding: 0px 36px;
+    }
+    
+    td {
+        border-bottom: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        gap: 0;
+    }
+    
+    td:nth-child(2) {
+        color: #7e442e;
+        font-weight: bold;
+    }
+    
+    .attribution {
+        margin: 20px 0px;
+        padding: 20px;
+    }
+
+
+
+}
